@@ -1,0 +1,15 @@
+class Test {
+ Void noChange(int i, int j) {
+  i = i+j;
+  j = -j;
+ }
+} 
+ class CallByValue {
+  Public static void main(string args[]) {
+   Test ob = new Test();
+   int a = 15, b = 20;
+   system.out println("a and b before call: " + a + " " + b);
+   ob.noChange(a, b);
+   system.out.println("a and b after call: " + a + " " + b);
+   }
+ }
