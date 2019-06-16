@@ -1,0 +1,23 @@
+Class overload2 {
+ void f(int x)  {
+  system.out.println("inside f(int): " + x);
+ }
+  void f (double x) {
+  system.out.println("inside f(double): " + x);
+  }
+ } 
+  class typeconv {
+   public static void main(string args []) {
+    overload2 ob = new overload2();
+    int i = 10;
+    double d = 10.1;
+    byte b = 99;
+    short s = 10;
+    float f = 11.5f;
+    ob.f(i);
+    ob.f(d); 
+    ob.f(b);
+    ob.f(s);
+    ob.f(f);
+   }
+ }
